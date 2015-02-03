@@ -4,7 +4,7 @@
 # The data file 'household_power_consumption.txt' shall be positioned in the working directory
 
 # Loads only a calculated portion of the data file into memory keeping the column names
-names <- data <- read.csv("household_power_consumption.txt", sep=";", nrows=1)
+names <- read.csv("household_power_consumption.txt", sep=";", nrows=1)
 data <- read.table("household_power_consumption.txt", sep=";", nrows=5760, skip= 64800, 
                  col.names=colnames(names))
 
